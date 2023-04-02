@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { signup } from "./fetch";
 export default function Signup() {
+  const navigate = useNavigate();
   const [disable, setDisable] = useState(true);
   const [values, setValues] = useState({
     email: "",
@@ -14,21 +16,24 @@ export default function Signup() {
     });
   };
 
-  useEffect(() => {
-    checkCondition();
-  }, [values]);
-
   const checkCondition = () => {
     if (values.email.includes("@") && values.password.length >= 8)
       return setDisable(false);
   };
 
+  useEffect(() => {
+    checkCondition();
+  }, [values]);
+
   const handleRegister = async (e) => {
     e.preventDefault();
-
     const res = await signup({ ...values });
-    if (!res) return alert("회원가입에 실패했습니다.");
-    alert("회원가입에 성공");
+    console.log("res", res);
+    if (res) {
+      alert("회원가입에 성공");
+      navigate("/signin");
+      return;
+    }
   };
   return (
     <>

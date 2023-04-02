@@ -3,11 +3,12 @@ import { useRoutes } from "react-router-dom";
 import Signup from "../component/SignUp";
 import Signin from "../component/SignIn";
 import Todo from "../component/Todo";
+import Intro from "../component/Intro";
 
 const routeList = [
   {
     path: `/`,
-    element: <Todo />,
+    element: <Intro />,
   },
   {
     path: `/signup`,
@@ -16,6 +17,10 @@ const routeList = [
   {
     path: `/signin`,
     element: <Signin />,
+  },
+  {
+    path: `/todo`,
+    element: <Todo />,
   },
 ];
 const RenderRouter = () => {
