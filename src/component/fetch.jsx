@@ -42,7 +42,6 @@ export async function signin(param) {
       });
       return;
     }
-    console.log("accessToken", accessToken.access_token);
     localStorage.setItem("JWT", accessToken.access_token);
     return response;
   } catch (err) {
@@ -51,7 +50,6 @@ export async function signin(param) {
 }
 
 export async function getTodo(access_token) {
-  console.log(access_token);
   try {
     const url = `${URL + `/todos`}`;
     const opts = {
@@ -100,7 +98,6 @@ export async function createTodo(param, access_token) {
 }
 
 export async function updateTodo(id, access_token, params) {
-  console.log("fetch", params);
   try {
     const url = `${URL + `/todos/${id}`}`;
     const opts = {
