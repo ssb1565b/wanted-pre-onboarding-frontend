@@ -1,10 +1,12 @@
+# 원티드 프리온보딩 프론트엔드 - 선발과제
+
 ### 프로젝트의 실행 방법
 
 ```
-git clone https://github.com/ssb1565b/wanted-pre-onboarding-frontend.git
-cd wanted-pre-onboarding-frontend
-npm i
-npm start
+$ git clone https://github.com/ssb1565b/wanted-pre-onboarding-frontend.git
+$ cd wanted-pre-onboarding-frontend
+$ npm i
+$ npm start
 ```
 
 ### 데모 영상
