@@ -9,4 +9,8 @@ npm start
 
 ### 데모 영상
 
-배포 링크도 대체합니다.
+기능구현 영상
+https://drive.google.com/file/d/13P4V4AMTJg_HPnF6QfUWCpvgR25XncaU/view?usp=sharing
+
+리다이렉트처리
+https://drive.google.com/file/d/1CiJ8HwNl35t5UTkA2ZoyyOUNHVhCPMQ-/view?usp=sharing
