@@ -28,7 +28,6 @@ export default function Signup() {
   const handleRegister = async (e) => {
     e.preventDefault();
     const res = await signup({ ...values });
-    console.log("res", res);
     if (res) {
       alert("회원가입에 성공");
       navigate("/signin");
